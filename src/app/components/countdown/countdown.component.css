@@ -1,0 +1,66 @@
+.count-down-timer {
+  box-shadow: 2px 6px 9px 2px rgb(0 0 0 / 20%);
+  text-align: center;
+  background-color: #194557;
+  max-width: 800px;
+  margin: 15px auto;
+  color: #d9a74a;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: sans-serif;
+
+  > p {
+    margin: 5px 0 15px 0;
+  }
+
+  .wrapper {
+    .description,
+    .times {
+      display: grid;
+      grid-template-columns: repeat(4, calc(25% - 8px));
+      grid-column-gap: 10px;
+    }
+
+    .description {
+      > p {
+        margin: 0;
+        font: normal 14px sans-serif;
+      }
+    }
+
+    .times {
+      p {
+        letter-spacing: -5px;
+        position: relative;
+        margin: 0;
+        font: normal 30px courier, sans-serif;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .count-down-timer {
+    margin: 0;
+    font: normal 10px sans-serif;
+  }
+}
+
+.btn {
+  background-color: #5b3a33;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #3e2a24;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}

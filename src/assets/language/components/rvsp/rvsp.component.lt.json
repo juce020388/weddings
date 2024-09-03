@@ -1,0 +1,16 @@
+{
+  "title": "Pakvietimas",
+  "helloMessage" : ",liko apsispręsti ar mums pavyks susitikti vestuvėse, kurios įvyks 2024 m. rugsėjo 14 d.",
+  "overnight": "Su nakvyne?",
+  "message": "Žinutė (neprivaloma):",
+  "contactDescription" : "Galite palikti mums savo kontaktus, kad būtų lengviau susisiekti.",
+  "phone" : "Telefono numeris (neprivaloma):",
+  "email" : "Paštas (neprivaloma):",
+  "present1" : "Vietoj materialinių dovanų būtume nepaprastai dėkingi už įnašus į mūsų medaus mėnesio patirtis. Jūsų dosnumas padės mums sukurti prisiminimus, kurie išliks visą gyvenimą.💴💶💷💵",
+  "btnParticipate" : "Dalyvausiu",
+  "btnNotParticipate" : "Nedalyvausiu",
+  "btnCancelParticipate" : "Atšaukti dalyvavimą",
+  "btnChangeDecision" : "Keisti sprendimą",
+  "msgParticipate" : "Jūs patvirtinote dalyvavimą vestuvėse!",
+  "msgNotParticipate" : "Jūs nusprendėte nedalyvauti vestuvėse."
+}

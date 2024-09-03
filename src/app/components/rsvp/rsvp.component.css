@@ -1,0 +1,48 @@
+button {
+  color: #666;
+  background-color: #22c2a4;
+  border: none;
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  width: 200px;
+  margin: 20px 10px 4px auto;
+  float: left;
+}
+
+button.accept {
+  border-radius: 0 0 0 20px;
+}
+
+button.regret {
+  border-radius: 0 0 20px 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.user-label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #0e490a;
+  margin-left: 0.1rem;
+}
+
+.attendance-buttons button {
+  margin-right: 1rem;
+  white-space: break-spaces;
+  word-wrap: break-word;
+}
+
+.important-text {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: rgba(182, 25, 89, 0.54);
+}

@@ -1,0 +1,128 @@
+<section>
+  <div class="book-page">
+    <div class="container">
+
+      <div class="container mt-4">
+
+        <button class="btn btn-primary mb-2" (click)="uploadData()">Upload Data</button>
+        <button class="btn btn-primary mb-2" (click)="getAllUsers()">Get All Users</button>
+
+        <hr/>
+
+        <div class="my-3">
+          <button class="btn btn-primary mb-2" (click)="getAllUsersThatAreAttending()">Get Attendees</button>
+        </div>
+        <div *ngIf="attendingUsers.length > 0" class="mt-3">
+          <h4>Attending Users</h4>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let user of attendingUsers" style="padding: 10px; border-bottom: 1px solid #ccc;">
+              <span style="font-weight: bold;">Name: </span> <span>{{ user.name }}</span> -
+              <span style="font-weight: bold;">Count: </span> <span>{{ user.count }}</span> -
+              <span style="font-weight: bold;">Message: </span> <span>{{ user.message }}</span> -
+              <span style="font-weight: bold;">Stay overnight: </span> <span>{{ user.overnightStay }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <hr/>
+
+        <div class="my-3">
+          <button class="btn btn-primary mb-2" (click)="getAllUsersThatAreNotAttending()">Get Not Attendees</button>
+        </div>
+        <div *ngIf="notAttendingUsers.length > 0" class="mt-3">
+          <h4>Not Attending Users</h4>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let user of notAttendingUsers">
+              {{ user.name }} - Count: {{ user.count }} - {{ user.message}}
+            </li>
+          </ul>
+        </div>
+
+        <hr/>
+
+        <div class="my-3">
+          <button class="btn btn-secondary" (click)="getUserById()">Get User By ID</button>
+          <input id="userId" placeholder="User ID:" type="text" class="form-control" [(ngModel)]="userId"/>
+        </div>
+        <div *ngIf="user" class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">User Information</h5>
+            <p class="card-text"><strong>ID:</strong> {{user.id}}</p>
+            <p class="card-text"><strong>Name:</strong> {{user.name}}</p>
+            <p class="card-text"><strong>Attending:</strong> {{user.attending ? 'Yes' : 'No'}}</p>
+            <p class="card-text"><strong>Overnight Stay:</strong> {{user.overnightStay ? 'Yes' : 'No'}}</p>
+            <p class="card-text"><strong>Count:</strong> {{user.count}}</p>
+            <p class="card-text"><strong>Message:</strong> {{user.message}}</p>
+            <p class="card-text"><strong>Email:</strong> {{user.email}}</p>
+            <p class="card-text"><strong>Phone:</strong> {{user.phone}}</p>
+            <p class="card-text"><strong>Activity:</strong> {{user.activity | date}}</p>
+            <p class="card-text"><strong>Country Code:</strong> {{user.countryCode}}</p>
+          </div>
+        </div>
+
+        <hr/>
+
+        <div>
+          <h3>Create New User</h3>
+          <form (ngSubmit)="createUser()">
+            <div class="mb-3">
+              <label for="id" class="form-label">ID:</label>
+              <input id="id" type="text" class="form-control" [(ngModel)]="newUser.id" name="id" required/>
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input id="name" type="text" class="form-control" [(ngModel)]="newUser.name" name="name" required/>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input id="attending" type="checkbox" class="form-check-input" [(ngModel)]="newUser.attending"
+                     name="attending"/>
+              <label for="attending" class="form-check-label">Attending</label>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input id="overnightStay" type="checkbox" class="form-check-input" [(ngModel)]="newUser.overnightStay"
+                     name="overnightStay"/>
+              <label for="overnightStay" class="form-check-label">Overnight Stay</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="count" class="form-label">Count:</label>
+              <input id="count" type="number" class="form-control" [(ngModel)]="newUser.count" name="count" required/>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message:</label>
+              <input id="message" type="text" class="form-control" [(ngModel)]="newUser.message" name="message"/>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input id="email" type="email" class="form-control" [(ngModel)]="newUser.email" name="email"/>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone:</label>
+              <input id="phone" type="text" class="form-control" [(ngModel)]="newUser.phone" name="phone"/>
+            </div>
+
+            <div class="mb-3">
+              <label for="activity" class="form-label">Activity:</label>
+              <input id="activity" type="date" class="form-control" [(ngModel)]="newUser.activity" name="activity"
+                     required/>
+            </div>
+
+            <div class="mb-3">
+              <label for="countryCode" class="form-label">Country Code:</label>
+              <input id="countryCode" type="text" class="form-control" [(ngModel)]="newUser.countryCode"
+                     name="countryCode" required/>
+            </div>
+
+            <button type="submit" class="btn btn-success">Create User</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

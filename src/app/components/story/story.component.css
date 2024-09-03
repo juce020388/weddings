@@ -1,0 +1,15 @@
+.image-row {
+  margin: 10px;
+}
+
+.image-row img {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.row {
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}

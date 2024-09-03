@@ -1,0 +1,75 @@
+<section id="rsvp">
+  <div class="book-page">
+    <div class="container">
+      <h1 class="fw-light text-center mt-4 mb-0">
+        <div class="stylized-header">
+          <div class="butterfly">
+            <div class="butterflybeat">🦋</div>
+            <div class="butterflybeatecho">🦋</div>
+          </div>
+          {{ localization?.title }}
+          <div class="butterfly">
+            <div class="butterflybeat">🦋</div>
+            <div class="butterflybeatecho">🦋</div>
+          </div>
+        </div>
+      </h1>
+      <hr class="mt-2 mb-5">
+      <div class="row" *ngIf="activeUser">
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group" *ngIf="attending === null || attending === undefined">
+            <label class="user-label"><span class="user-name">{{ localizedName }}</span>{{ localizedGreeting }}</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="overnight" name="overnight"
+                     [(ngModel)]="overnightStay">
+              <label class="form-check-label" for="overnight">{{ localization?.overnight }}</label>
+            </div>
+            <div class="form-group mt-4">
+              <label for="message">{{ localization?.message }}</label>
+              <textarea class="form-control" id="message" name="message" rows="3" [(ngModel)]="userMessage"></textarea>
+            </div>
+            <div class="form-group border border-dark-subtle rounded p-3 m-4">
+              <p>{{ localization?.contactDescription }}</p>
+              <div class="mb-3">
+                <label for="phone">{{ localization?.phone }}</label>
+                <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="userPhone">
+              </div>
+              <div>
+                <label for="email">{{ localization?.email }}</label>
+                <input type="email" class="form-control" id="email" name="email" [(ngModel)]="userEmail">
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-md-12 important-text">
+                  <p>{{ localization?.present1 }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="attendance-buttons">
+              <button type="button" class="btn btn-success mr-2"
+                      (click)="setAttendance(true)">{{ localization?.btnParticipate }}
+              </button>
+              <button type="button" class="btn btn-danger"
+                      (click)="setAttendance(false)">{{ localization?.btnNotParticipate }}
+              </button>
+            </div>
+          </div>
+          <div *ngIf="attending === true" class="alert alert-success" role="alert">
+            <p class="text-center">{{ localization?.msgParticipate }}</p>
+            <app-countdown/>
+            <button type="button" class="btn btn-warning"
+                    (click)="setAttendance(null)">{{ localization?.btnCancelParticipate }}
+            </button>
+          </div>
+          <div *ngIf="attending === false" class="alert alert-warning" role="alert">
+            <p class="text-center">{{ localization?.msgNotParticipate }}</p>
+            <button type="button" class="btn btn-success"
+                    (click)="setAttendance(null)">{{ localization?.btnChangeDecision }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

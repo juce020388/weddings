@@ -1,0 +1,10 @@
+.row {
+  padding: 15px;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+}

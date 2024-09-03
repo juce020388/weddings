@@ -1,0 +1,16 @@
+{
+  "title": "Zaproszenie",
+  "helloMessage": ", czy planujesz wziąć udział w naszym weselu, które odbędzie się 14 września 2024 roku?",
+  "overnight": "Z noclegiem?",
+  "message": "Wiadomość (opcjonalnie):",
+  "contactDescription": "Możesz zostawić nam swoje dane kontaktowe, aby łatwiej było się skomunikować.",
+  "phone": "Numer telefonu (opcjonalnie):",
+  "email": "Email (opcjonalnie):",
+  "present1": "Zamiast materialnych prezentów, bylibyśmy niezmiernie wdzięczni za wkłady w nasze doświadczenia miesiąca miodowego. Twoja hojność pomoże nam stworzyć wspomnienia, które pozostaną na całe życie.💴💶💷💵",
+  "btnParticipate": "Wezmę udział",
+  "btnNotParticipate": "Nie wezmę udziału",
+  "btnCancelParticipate": "Anuluj udział",
+  "btnChangeDecision": "Zmień decyzję",
+  "msgParticipate": "Potwierdziłeś swój udział w weselu!",
+  "msgNotParticipate": "Zdecydowałeś się nie uczestniczyć w weselu."
+}

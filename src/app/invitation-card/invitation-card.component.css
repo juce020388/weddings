@@ -1,0 +1,67 @@
+.wedding-invitation {
+  max-width: 600px;
+  margin: auto;
+  font-family: 'Arial, sans-serif', serif;
+  color: #5b3a33;
+  background: linear-gradient(to bottom, #f8f4f2 0%, #f8f4f2 33%, #e0d4d4 33%, #e0d4d4 66%, #d4b8b8 66%, #d4b8b8 100%);
+  border: 15px solid #e0d4d4;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.photo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details {
+  text-align: center;
+}
+
+.event {
+  margin: 20px 0;
+}
+
+.event h2 {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  border-bottom: 1px solid #5b3a33;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.event p {
+  font-size: 1.2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heart {
+  color: red;
+  font-size: 24px;
+}
+.date-time {
+  font-size: 18px;
+}
+
+.venue {
+  font-size: 18px;
+  margin-top: 10px;
+}

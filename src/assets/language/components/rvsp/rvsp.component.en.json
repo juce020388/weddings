@@ -1,0 +1,16 @@
+{
+  "title": "Invitation",
+  "helloMessage": ", do you plan to attend our wedding, which will take place on September 14, 2024?",
+  "overnight": "With overnight stay?",
+  "message": "Message (optional):",
+  "contactDescription": "You can leave us your contact details for easier communication.",
+  "phone": "Phone number (optional):",
+  "email": "Email (optional):",
+  "present1": "Instead of material gifts, we would be extremely grateful for contributions to our honeymoon experiences. Your generosity will help us create memories that will last a lifetime.💴💶💷💵",
+  "btnParticipate": "I will participate",
+  "btnNotParticipate": "I will not participate",
+  "btnCancelParticipate": "Cancel participation",
+  "btnChangeDecision": "Change decision",
+  "msgParticipate": "You have confirmed your participation in the wedding!",
+  "msgNotParticipate": "You have decided not to participate in the wedding."
+}

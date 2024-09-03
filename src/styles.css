@@ -1,0 +1,90 @@
+/*.stylized-header {*/
+/*  font-family: 'Dancing Script', cursive;*/
+/*  font-size: 3rem;*/
+/*  color: #333;*/
+/*}*/
+
+.stylized-header {
+  font-family: 'Century Gothic', sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: #333;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px 0px 5px 0px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.book-page {
+  background-color: rgba(138, 182, 231, 0.7);
+  border: 1px solid #5abcd2;
+  box-shadow: 0 4px 8px rgba(20, 81, 164, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+
+
+/* Butterfly */
+.butterfly {
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+}
+
+.butterflybeat {
+  position: relative;
+  z-index: 1;
+  animation: b_beat 3s alternate infinite;
+}
+
+.butterflybeatecho {
+  position: absolute;
+  color: cornflowerblue;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: b_echo 3s alternate infinite;
+}
+
+@keyframes b_beat {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  14% {
+    transform: scale(0.9) translateY(-5px) rotate(5deg);
+  }
+  21% {
+    transform: scale(1.1) translateY(-10px) rotate(-10deg);
+  }
+  28% {
+    transform: scale(1) translateY(-5px) rotate(15deg);
+  }
+  35% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes b_echo {
+  0% {
+    opacity: 0.5;
+    transform: scale(1) translateY(0);
+  }
+  14% {
+    opacity: 0.4;
+    transform: scale(0.8) translateY(-3px) rotate(3deg);
+  }
+  21% {
+    opacity: 0.4;
+    transform: scale(1.1) translateY(-6px) rotate(-5deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3) translateY(-15px) rotate(10deg);
+  }
+}
